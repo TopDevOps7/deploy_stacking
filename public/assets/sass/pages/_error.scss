@@ -1,0 +1,47 @@
+/*--------------------
+    404 pages
+--------------------*/
+
+.error-area {
+    padding-bottom: 100px;
+    .error-message {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        .title {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 60px;
+            text-transform: capitalize;
+            margin-bottom: 15px;
+        }
+        .descr {
+            font-size: 18px;
+            text-transform: capitalize;
+            color: var(--heading-color);
+            font-weight: 500;
+            line-height: 30px;
+            display: block;
+            margin-bottom: 40px;
+        }
+        .backtohome {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 500;
+            color: #fff;
+            width: 230px;
+            text-align: center;
+            background-color: #fc427b;
+            border-radius: 35px;
+            height: 60px;
+            line-height: 60px;
+            @include transition($transition);
+            &:hover {
+                background-color: #2e3970;
+                color: #fff;
+            }
+        }
+    }
+}

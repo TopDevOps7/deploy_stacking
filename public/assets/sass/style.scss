@@ -1,0 +1,53 @@
+/*
+Theme Name: Investon
+Theme URI: http://s7template.com/tf/investon
+Author: s7template
+Author URI: http://s7template.com
+Description: Investon - Investment & Business Agency HTML Template
+Version: 1.0.1
+*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Global
+    ## Global
+    ## Mixins
+    ## Theme
+    ## Variables
+    ## Common
+
+# Sections
+    ## Nav Bar
+    ## Banner
+    ## Brand Area
+    ## Footer
+    ## Widgets
+
+# Elements
+    ## Flaticon
+
+--------------------------------------------------------------*/
+
+//== Global Design
+@import "global/_mixins";
+@import "global/_variables";
+@import "global/_global";
+@import "global/_theme";
+@import "global/_common";
+//== Pages;
+@import "pages/_error";
+@import "pages/_case";
+@import "pages/_privacy";
+@import "pages/_user_panel";
+//== Sections 
+@import "sections/_widgets";
+@import "sections/_navbar";
+@import "sections/_banner";
+@import "sections/_blog_details";
+@import "sections/_faq";
+@import "sections/_content";
+@import "sections/_footer";
+@import "global/_responsive";
+//== Elements

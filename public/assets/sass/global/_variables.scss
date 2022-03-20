@@ -1,0 +1,53 @@
+//== Template Main Color
+$color-main: var(--main-color-one);
+$color-para: var(--paragraph-color);
+$color-blue: var(--heading-color);
+$color-blue-2: #413788;
+$color-blue-3: #223cbf;
+$color-black: #2b2b2b;
+$color-black-2: #11001e;
+$color-black-3: #1c1c1c;
+$color-purple: #762dc4;
+$color-skyblue: #54caec;
+$color-pink-1: #ff007a;
+$color-pink-2: #fc427b;
+$color-pink-3: #fe0079;
+$color-pink-4: #fb477e;
+$color-pink-5: #fa497f;
+$color-gray: #626262;
+$color-gray-2: #797979;
+$color-gray-3: #e0e0e0;
+$color-gray-4: #e8e8e8;
+$color-gray-5: #ededed;
+$color-gray-6: #eaeaea;
+$color-ash: #5a5a5a;
+$color-white: #ffffff;
+$color-gray99: #F9F9F9;
+$color-gray88: #F8F8F8;
+$color-gray-a: #FAFAFA;
+$danger : #F12552;
+$tutu: #FFE8E8;
+$color-white-smoke: #EFEFEF;
+$grey2: #515151;
+$color-gray80: #ccc;
+//== Template Main Color
+$white: #fff;
+$danger: #dc3545;
+//== social media colors
+$facebook: #3b5999;
+$twitter: #55acee;
+$dribbble: #ea4c89;
+$behance: #131418;
+$google-plus: #dd4b39;
+$linkedin: #0077B5;
+$instagram: #e4405f;
+$youtube: #dd4b39;
+
+/*-----------------
+    # Typography
+-----------------*/
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900&display=swap");
+//  transition
+$transition: all .3s ease-in;
+$transition-long: all .5s ease-in;

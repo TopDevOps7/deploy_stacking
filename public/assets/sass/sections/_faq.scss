@@ -1,0 +1,79 @@
+/*==========================================
+    faq page
+==========================================*/
+
+.faq {
+    padding: 60px 0 90px;
+    background: #fbfbfc;
+    .accordion {
+        .card {
+            border: none;
+            margin-bottom: 30px;
+            &:not(:first-of-type) {
+                .card-header:first-child {
+                    border-radius: 10px;
+                }
+            }
+            .card-header {
+                border: none;
+                border-radius: 10px;
+                padding: 0;
+                h5 {
+                    padding: 0;
+                    button {
+                        color: var(--heading-color);
+                        font-size: 18px;
+                        font-weight: 600;
+                        text-decoration: none;
+                        padding: 0 30px 0 70px;
+                        height: 80px;
+                        display: block;
+                        width: 100%;
+                        text-align: left;
+                        background: #fff;
+                        box-shadow: 0px -50px 140px 0px rgba(69, 81, 100, 0.1);
+                        border-radius: 10px 10px 0 0;
+                        position: relative;
+                        &:after {
+                            position: absolute;
+                            left: 30px;
+                            top: 50%;
+                            margin-top: -10px;
+                            width: 20px;
+                            height: 20px;
+                            background-color: transparent;
+                            color: #fc427b;
+                            text-align: center;
+                            border: 1px solid rgb(145, 3, 159);
+                            border-radius: 50%;
+                            line-height: 100%;
+                            content: '\f067';
+                            font-size: 10px;
+                            line-height: 18px;
+                            font-family: "FontAwesome";
+                            font-weight: 900;
+                        }
+                        &.collapsed {
+                            background: #fff;
+                            border-radius: 10px;
+                            box-shadow: none;
+                        }
+                    }
+                    button[aria-expanded="true"]:after {
+                        content: '\f068';
+                        color: #fff;
+                        background-image: -webkit-linear-gradient( -30deg, #fc427b 0%, rgb(145, 3, 159) 100%);
+                    }
+                }
+            }
+            .card-body {
+                box-shadow: 0px 15px 140px 0px rgba(69, 81, 100, 0.1);
+                border-radius: 0 0 10px 10px;
+                padding-top: 0;
+                margin-top: -4px;
+                padding-left: 72px;
+                padding-right: 70px;
+            }
+        }
+    }
+}

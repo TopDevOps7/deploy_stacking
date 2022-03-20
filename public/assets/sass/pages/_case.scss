@@ -1,0 +1,249 @@
+/*------------------------------
+    case Page
+------------------------------*/
+
+.case-page-area {
+    padding: 0px 0px 100px;
+}
+
+.case-single {
+    margin-bottom: 70px;
+    display: flex;
+    &.style-02 {
+        margin-bottom: 20px;
+    }
+    .case-content {
+        margin: auto;
+        padding-left: 15px;
+        h3 {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.case-image {
+    position: relative;
+    display: inline-block;
+    .case-item-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .case-link {
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            top: calc(50% - 15px);
+            transform: translateY(-50%);
+            transition: all .5s ease;
+            // visibility: hidden;
+            opacity: 0;
+            z-index: 9;
+            width: 30px;
+            height: 30px;
+            // left: calc(50% - 15px);
+            left: calc(50% - 0px);
+            transition-delay: 0.3s;
+            span {
+                color: #fff;
+                width: 100%;
+                height: 100%;
+                line-height: 50px;
+                display: block;
+                font-size: 18px;
+                &::before {
+                    font-size: 30px;
+                }
+            }
+        }
+        &:before {
+            position: absolute;
+            left: -50%;
+            top: -50%;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background-color: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            opacity: 0;
+            transition: all .5s ease;
+        }
+        &:after {
+            position: absolute;
+            right: -50%;
+            bottom: -50%;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background-color: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            opacity: 0;
+            transition: all .5s ease;
+        }
+    }
+    &:hover .case-item-hover:before {
+        opacity: 1;
+        left: 0;
+        top: 0;
+    }
+    &:hover .case-item-hover:after {
+        opacity: 1;
+        right: 0;
+        bottom: 0;
+    }
+    &:hover .case-link {
+        opacity: 1;
+        left: calc(50% - 15px);
+    }
+}
+
+
+/*------------------------------
+    case Details Page
+------------------------------*/
+
+.case-details-area {
+    padding: 0px 0px 100px;
+}
+
+.single-case-item {
+    position: relative;
+    text-align: left;
+    margin-bottom: 30px;
+    .case-content {
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        right: 10px;
+        padding: 25px 15px;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: .6s;
+        transition: .6s;
+        padding: 25px;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: 5px;
+            background-color: #ff8b00;
+            z-index: -1;
+            border-radius: 2px;
+        }
+        h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+            margin-top: 0px;
+            color: #fff;
+            a {
+                color: #fff;
+            }
+        }
+        p {
+            color: #fce5ca;
+            font-weight: 400;
+        }
+    }
+    &:hover .case-content,
+    .single-case-item:focus .case-content {
+        bottom: 10px;
+        opacity: 1;
+        visibility: visible;
+        color: #fff;
+    }
+}
+
+.case-details-image {
+    margin-bottom: 30px;
+}
+
+.cases-details-desc {
+    margin-top: 5px;
+    h3 {
+        margin-bottom: 13px;
+        font: {
+            size: 24px;
+            weight: 700;
+        }
+    }
+    .features-text {
+        margin: {
+            top: 25px;
+            bottom: 25px;
+        }
+        h4 {
+            margin-bottom: 12px;
+            font: {
+                size: 17px;
+                weight: 600;
+            }
+            i {
+                font-size: 16px;
+                margin-right: 4px;
+                color: $color-main;
+            }
+        }
+    }
+    .case-details-info {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: {
+            right: -15px;
+            left: -15px;
+            top: 35px;
+        }
+        .single-info-box {
+            -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+            max-width: 20%;
+            padding: {
+                left: 15px;
+                right: 15px;
+            }
+            h4 {
+                margin-bottom: 10px;
+                font: {
+                    size: 19px;
+                    weight: 700;
+                }
+            }
+            span {
+                display: block;
+                color: var(--heading-color);
+                font-size: 15px;
+            }
+            .social {
+                padding-left: 0;
+                margin-bottom: 0;
+                list-style-type: none;
+                li {
+                    display: inline-block;
+                    margin-right: 8px;
+                    a {
+                        color: $color-main;
+                        display: inline-block;
+                        &:hover {
+                            color: $color-main;
+                            transform: translateY(-5px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

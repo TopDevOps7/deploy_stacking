@@ -1,0 +1,89 @@
+.footer-area {
+    background: $color-black-3;
+    .footer-top {
+        padding: 100px 0 70px;
+        .widget{
+            .footer-social {
+                margin-top: 32px;
+            }
+            &.widget_nav_menu {
+                ul li {
+                    a {
+                        color: $color-white;
+                        font-size: 16px;
+                        font-weight: 500;
+                        transition: padding .5s;
+                        &:after {
+                            display: none;
+                        }
+                        &:hover {
+                            color: $color-main;
+                            i {
+                                opacity: 1;
+                                margin-right: 5px;
+                            }
+                        }
+                        i {
+                            font-size: 12px;
+                            position: relative;
+                            top: -2px;
+                            opacity: 0;
+                            transition: all .5s;
+                            margin-right: -15px;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    .footer-bottom {
+        padding: 40px 0;
+        border: 1px solid #434343;
+        .footer-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-flex;
+            li {
+                padding-left: 29px;
+                &:first-child {
+                    padding: 0;
+                }
+                a {
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: #dedede;
+                }
+            }
+        }
+        .copyright {
+            margin: 0;
+            font-weight: 700;
+            font-size: 18px;
+            color: #dedede;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                height: 44px;
+                width: 2px;
+                background: #434343;
+                left: -15px;
+                top: 50%;
+                margin-top: -22px;
+            }
+        }
+    }
+}
+.footer-logo{
+    display: block;
+    img {
+        margin-bottom: 27px;
+    }
+}
+.contact-widget.widget.footer-widget {
+    margin-bottom: 45px;
+    .widget-title {
+        margin-bottom: 32px;
+    }
+}

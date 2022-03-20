@@ -1,0 +1,31 @@
+/*------------------------------
+    Privacy Policy page
+------------------------------*/
+
+.privacy-area {
+    margin-bottom: 100px;
+    .privacy-image {
+        padding-bottom: 30px;
+    }
+    .privacy-text {
+        text-align: left !important;
+    }
+    .privacy-header {
+        padding-bottom: 20px;
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+    .part-text {
+        h5 {
+            font-size: 15px;
+            font-weight: 600;
+        }
+        p {
+            a {
+                font-weight: 500;
+            }
+        }
+    }
+}
